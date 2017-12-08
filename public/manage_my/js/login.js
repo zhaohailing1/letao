@@ -94,4 +94,13 @@ $(function () {
         var validator = $("form").data('bootsrapvalidator');
         validato.resetForm();
     })
+    //测试进度条
+    //引入了nprogress.js文件后，就有了一个全局对象NProgress对象
+    //开启进度条
+    NProgress.start();
+    setTimeout(function() {
+       //关闭进度条
+       NProgress.done();
+    },2000);
+   
 })
